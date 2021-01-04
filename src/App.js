@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { ToggleButtonGroup, ToggleButton, Button } from "react-bootstrap";
-import "./App.css";
-import "zingchart/es6";
+import { ToggleButtonGroup, ToggleButton } from "react-bootstrap";
+
 import ZingChart from "zingchart-react";
+import "./App.css";
 import data from "./utils/data";
 import fetchXData from "./utils/fetchXData";
 import fetchYData from "./utils/fetchYData";
@@ -10,8 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.handleTotal = this.handleTotal.bind(this);
-    this.runscript = this.runscript.bind(this);
+    this.plotVertical= this.plotVertical.bind(this);
 
     this.state = {
       config: {
@@ -20,15 +19,42 @@ class App extends Component {
           labels: [],
         },
         series: [],
+        scaleY: {
+          label: {
+            text: "Number of meetings",
+            fontSize: "14px",
+          },
+        },
+        crosshairX: {
+          lineColor: "#424242",
+          lineGapSize: "4px",
+          lineStyle: "dotted",
+          plotLabel: {
+            padding: "15px",
+            backgroundColor: "white",
+            bold: true,
+            borderColor: "#e3e3e3",
+            borderRadius: "5px",
+            fontColor: "#2f2f2f",
+            fontFamily: "Lato",
+            fontSize: "12px",
+            shadow: true,
+            shadowAlpha: 0.2,
+            shadowBlur: 5,
+            shadowColor: "#a1a1a1",
+            shadowDistance: 4,
+            textAlign: "left",
+          },
+          scaleLabel: {
+            backgroundColor: "#424242",
+          },
+        },
       },
       value: [1],
     };
   }
-  handleTotal(){
-    this.setState({ value: [] });
 
-  }
-  runscript(data, arrOfWks) {
+  plotVertical(data, arrOfWks) {
     const run_2 = async (data, arrOfWks) => {
       try {
         let dt_2 = await fetchYData(data, arrOfWks);
@@ -72,14 +98,13 @@ class App extends Component {
       }
     };
     run(data);
-    this.runscript(data, this.state.value);
+    this.plotVertical(data, this.state.value);
   }
   componentDidUpdate() {
-    this.runscript(data, this.state.value);
+    this.plotVertical(data, this.state.value);
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App-header">
         <div className="mb-3">
@@ -94,18 +119,15 @@ class App extends Component {
                 <ToggleButton value={1}>Type A</ToggleButton>
                 <ToggleButton value={2}>Type B</ToggleButton>
                 <ToggleButton value={3}>Type C</ToggleButton>
+                <ToggleButton value={4}>Cumulative</ToggleButton>
               </ToggleButtonGroup>
-              <div className='container-fluid m-2'>
-                <Button  variant="success" onClick={this.handleTotal}>Cumulative</Button>
-              </div>
-              
             </div>
             <div className="card-footer text-muted">
               Weekly number of meetings chart
             </div>
           </div>
         </div>
-        <div className="container-fluid">
+        <div className="container">
           <ZingChart data={this.state.config} />
         </div>
       </div>

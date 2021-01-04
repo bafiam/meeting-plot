@@ -4,13 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// zingchart object for performance flags
-zingchart.DEV.KEEPSOURCE = 0; // prevents lib from storing the original data package
-zingchart.DEV.COPYDATA = 0; // prevents lib from creating a copy of the data package 
-
-// ZC object for license key
-zingchart.LICENSE = ['abcdefghijklmnopqrstuvwxy'];
+import "zingchart/es6";
 
 ReactDOM.render(
   <React.StrictMode>
