@@ -103,7 +103,7 @@ your@pc:~$ yarn start
 ## Live Version
 
 This is the link to the live preview. Feel free to visit.<br>
-[Meetings plotting App](https://vibrant-jennings-158558.netlify.app/)<br>
+[Meetings plotting App](https://pedantic-euclid-ed86af.netlify.app/)<br>
 
 <!-- ROADMAP -->
 
