@@ -66,11 +66,10 @@ In this project, the complete feature of the app renders the following:
 - React
 - React-DOM
 - React-Create-App
-- Redux
-- npm
+- ZingChart
 - CSS
 - ES6
-- React-thunk
+
 
 ## Usage/Getting Started
 
