@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+[![Contributor][contributor-shield]][contributor-url]
+[![Issues][issues-shield]][issues-url]
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <h1 align="center">Meetings plotting App </h1>
+  <p align="center">
+    React/Redux
+    <br />
+    <a href="https://github.com/bafiam/meeting-plot.git"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/bafiam/meeting-plot/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/bafiam/meeting-plot/issues">Request Feature</a>
+  </p>
+</p>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [About the Project](#about-the-project)
+- [Screenshots](#screenshots)
+- [Prerequisites Installations](#prerequisites-installations)
+- [Technology used](#technology-used)
+- [Usage/Getting Started](#how-to-Use)
+- [Live Version](#live-version)
+- [Roadmap](#roadmap)
+- [License](#license)
+- [Authors](#authors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+This project is a plotting App built with React and ZingChart.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, the complete feature of the app renders the following:
 
-### `yarn build`
+- A list of meetings type from different categories
+- A chart with type A selected
+- On type selection, update the chart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Some Categories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="./Screenshot-1.png" alt="screenshot1"/>
 
-### `yarn eject`
+#### All Categories
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="./screenshot-2.png" alt="screenshot1"/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Prerequisites Installations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p>If you want a copy of this project running on your machine you have to install:</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- <a href="https://nodejs.org/en/">Node.js (v5. 2.0 or greater)</a>
+- <a href="https://git-scm.com/downloads">Git version control system</a>
 
-## Learn More
+## Technology used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- CSS
+- ES6
+- React-thunk
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage/Getting Started
 
-### Code Splitting
+Once you have installed the required package shown on the [Prerequisites Installations](#required-installations), proceed with the following steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the Repository,
 
-### Analyzing the Bundle Size
+```Shell
+your@pc:~$ git clone https://github.com/bafiam/meeting-plot
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Move into the cloned folder
 
-### Making a Progressive Web App
+```Shell
+your@pc:~$ cd meeting-plot
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Get the dependencies needed for the app
 
-### Advanced Configuration
+```Shell
+your@pc:~$ yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start the server and use the app
 
-### Deployment
+```Shell
+your@pc:~$ yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Live Version
 
-### `yarn build` fails to minify
+This is the link to the live preview. Feel free to visit.<br>
+[Meetings plotting App](https://vibrant-jennings-158558.netlify.app/)<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/bafiam/meeting-plot/issues) for a list of proposed features (and known issues).
+
+<!-- CONTACT -->
+
+## Authors
+
+Stephen Gumba
+
+- [GitHub profile](https://github.com/bafiam)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributor-shield]: https://img.shields.io/badge/Contributors-1-%2300ff00
+[contributor-url]: https://github.com/bafiam/meeting-plot/graphs/contributors
+[issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
+[issues-url]: https://github.com/bafiam/meeting-plot/issues/
